@@ -1,0 +1,15 @@
+/* write the css code here for the dev selector */
+.studyalert { /*or .saifstudy dev*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #2d1313;
+  color: #f07575;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: wait;
+  font-family: Arial, sans-serif;
+  z-index: 0;
+}
