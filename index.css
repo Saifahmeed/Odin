@@ -1,12 +1,16 @@
 /* write the css code here for the dev selector */
+*{
+  box-sizing: border-box;
+}
 .saifstudy.studyalert { /*Group selector*/
   position: fixed;
   top: 0;
   right: 0;
-  padding: 20px;
+  padding: 10 15px;/*= 10top 15right 10bottom 15left*/
   background-color: #2d1313;
   color: purple;
   font-size: 14px;
+  margin: 10px auto;
   font-weight: bold;
   text-decoration: underline;
   cursor: wait;
