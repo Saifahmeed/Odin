@@ -1,15 +1,34 @@
 /* write the css code here for the dev selector */
-.studyalert { /*or .saifstudy dev*/
+.saifstudy.studyalert { /*Group selector*/
   position: fixed;
   top: 0;
   right: 0;
   padding: 20px;
   background-color: #2d1313;
-  color: #f07575;
+  color: purple;
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
   cursor: wait;
   font-family: Arial, sans-serif;
   z-index: 0;
+}
+body dev.saifstudy.me.studyalert { /*chaining, cascade rules specificty will ovveride it cuz it is more speceific
+  values: type selector is 1, class is 10, id is 100 excoet for inheretence for certain attriputes -Typography based properties- */
+  color:hsl(15, 82%, 56%);
+  cursor:cell;
+  height: 50px;
+}
+Saif{ /*or Saif, here only color is applid since that declaration directly targets it, while color from the parent is only inherited. although it is less specific*/
+  color:red;
+  height: 20px;/*but this doesnt applied as it is not typorgraphy;*/
+}
+/*also there is in cascade the rule order that u can override any selector from the same level;*/
+#niceday{
+  background-color: red;
+}
+.odin img{
+  height: 100px;
+  width: 100px;
+
 }

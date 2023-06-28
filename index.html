@@ -3,25 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Saif is learning!</title>
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="index.css" /><!--or u can work here with <style></style>-->
     </head> 
     <body>
         
-        <dev class="saifstudy studyalert"> <!-- I added multile classes, this is the parent of the paragraph below-->
-            <p>Hi, I'm Saif. I'm learning HTML and this is my first webpage!</p> <!-- this is the child of dev-->   
+        <dev class="saifstudy me studyalert"> <!-- I added multile classes, this is the parent of the paragraph below-->
+            <p>Hi, I'm <Saif class ="saif">Saif</Saif>. I'm learning HTML and this is my first webpage!</p> this is the child of dev   
         </dev>
+        <dev  id="niceday" class="saifstudy">Have a nice day</dev> <!--ID selector The major difference between classes and IDs is that an element can only have one ID. An ID cannot be repeated on a single page, and the ID attribute should not contain any whitespace at all.-->
         <p>trying <strong>strong</strong> you <em>can</em>.</p> 
         <!-- this is the child of body and any other paragraph is sibiing to it.-->
         <ul><!-- unordered-->
-            <li>Item 1</li>
+            <li style="color:brown">Item 1</li>
             <li>Item 2</li>
-        </ul>
+        </ul> 
         <ol> <!-- ordered-->
             <li>Item 1</li>
             <li>Item 2</li>
         </ol>
         <h1>Homepage</h1>
-        <a href="https://www.theodinproject.com/about"><img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo"></a> <!--anchor element, absolute link will be made up of the following parts: protocol://domain/path-->
+        <a class ="odin" href="https://www.theodinproject.com/about"><img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo"></a> <!--anchor element, absolute link will be made up of the following parts: protocol://domain/path-->
         <a href="pages/about.html">About</a> <!--Relative links only include the file path to the other page, relative to the page you are creating the link on.-->
         <!--alt attribute if doesnt load, it will explain to users-->
         <a href="Recipe Project/index.html">Check out my Recipe Project</a>
