@@ -1,38 +1,53 @@
-/* write the css code here for the dev selector */
-*{
-  box-sizing: border-box;
+/* Add this CSS code after the existing styles */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
 }
-.saifstudy.studyalert { /*Group selector*/
+
+.cont {
+  background-color: purple;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba( 0, 0, 0);
+}
+
+.saifstudy.studyalert {
   position: fixed;
+  margin: 20px;
   top: 0;
   right: 0;
-  padding: 10 15px;/*= 10top 15right 10bottom 15left*/
+  padding: 10px 20px 20px;
   background-color: #2d1313;
   color: purple;
   font-size: 14px;
-  margin: 10px auto;
   font-weight: bold;
   text-decoration: underline;
   cursor: wait;
   font-family: Arial, sans-serif;
   z-index: 0;
 }
-body dev.saifstudy.me.studyalert { /*chaining, cascade rules specificty will ovveride it cuz it is more speceific
-  values: type selector is 1, class is 10, id is 100 excoet for inheretence for certain attriputes -Typography based properties- */
-  color:hsl(15, 82%, 56%);
-  cursor:cell;
-  height: 50px;
-}
-Saif{ /*or Saif, here only color is applid since that declaration directly targets it, while color from the parent is only inherited. although it is less specific*/
-  color:red;
-  height: 20px;/*but this doesnt applied as it is not typorgraphy;*/
-}
-/*also there is in cascade the rule order that u can override any selector from the same level;*/
-#niceday{
-  background-color: red;
-}
-.odin img{
+
+.odin img {
   height: 100px;
   width: 100px;
+  filter: saturate(200%);
+  transition: filter 0.3s ease;
+}
+Saif{
+  color: #00ff00; /* Set the desired color value */
+  cursor: grab;
+}
+.odin img:hover {
+  filter: saturate(100%);
+}
+a[href="pages/about.html"] {
+  color: #00ff00; /* Set the desired color value */
+}
 
+a[href="Recipe Project/index.html"] {
+  color: blue; /* Set the desired color value */
 }
