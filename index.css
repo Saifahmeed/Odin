@@ -34,6 +34,7 @@ body {
   overflow: auto;
   white-space: nowrap;
   word-break: break-all;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .odin img {
@@ -69,5 +70,14 @@ a[href="Recipe Project/index.html"] {
   Inline-Block
   - Allow Elements Before And After It in The Same Line
   - Respect Padding, Margin, Width, Height
-
 */
+/* CSS Units
+px
+- em-> time x
+- rem-> Root (html default wich is 16px) time x 
+- nem or percentage-> from the font size of the parent element
+- •Viewportwidth-> vw (from the actual web size to be responsive)
+Read
+- vmin
+- vh
+Default Font Size For Web Page Is 16px */
