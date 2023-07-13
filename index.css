@@ -1,4 +1,29 @@
-/* Add this CSS code after the existing styles */
+
+.nav-contaner > dev{ /* = .nav-contaner dev */
+  display: flex;
+  flex-direction: row;
+  background-color: #2d1313;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: fixed;
+  top: 0;
+  left: 10px;
+  right:10px;
+  z-index: 1; 
+}
+dev.nav > a{ 
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block-inline;
+  width: 100%;
+  flex: 1 1 0;  /* 10% of the parent container, flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0. */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
 dev{
   background-repeat: repeat;
 }
@@ -57,6 +82,11 @@ a[href="pages/about.html"] {
 a[href="Recipe Project/index.html"] {
   color: blue; /* Set the desired color value */
 }
+a[href="pages/about.html"] {
+  color: #00ff00; /* Set the desired color value */
+}
+/* Flex declaration is Shorthand property. They are CSS properties that let you set the values of multiple other CSS properties simultaneously. 
+Using a shorthand property, you can write more concise (and often more readable) stylesheets, saving time and energy. */
 /*
   Block
   - Take Full Width If No Width
@@ -64,7 +94,7 @@ a[href="Recipe Project/index.html"] {
   - Respect Padding, Margin, Width, Height
   Inline
   - Do Not Repsepct Width, Height
-  - Respect Padding And Margin [ Just Wight + Left ]
+  - Respect Padding And Margin [ Just right + Left ]
   - Do Not Add Line Break
   - Allow Elements Before And After It in The Same Line
   Inline-Block
