@@ -14,13 +14,14 @@
   right:10px;
   z-index: 1; 
 }
+/*when you change flex-direction to column, justify-content aligns vertically and align-items aligns horizontally. */
 dev.nav > a{ 
   color: #fff;
   text-decoration: none;
   padding: 1rem;
   display: block-inline;
   width: 100%;
-  flex: 1 1 0;  /* 10% of the parent container, flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0. */
+  flex: 1 1 0;  /* default of flex =1, 1% of the parent container, flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0. */
   text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
@@ -43,9 +44,9 @@ body {
 }
 
 .saifstudy.studyalert {
-  position: fixed;
-  margin: 20px;
-  top: 0;
+  position: absolute;
+  margin: auto;
+  top: 10%;
   right: 0;
   padding: 10px 20px 20px;
   background-color: #2d1313;
@@ -73,7 +74,7 @@ Saif{
   cursor: grab;
 }
 .odin img:hover {
-  filter: saturate(100%);
+  filter: saturate(50%);
 }
 a[href="pages/about.html"] {
   color: #00ff00; /* Set the desired color value */
